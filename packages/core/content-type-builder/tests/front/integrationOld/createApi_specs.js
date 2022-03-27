@@ -82,7 +82,7 @@ describe('Test CTB', () => {
       // Open the attributes's modal
       cy.get('#openAddAttr').click().wait(animDelay);
 
-      // Check that we don't have a build error from reacstrap
+      // Check that we don't have a build error from reactstrap
       cy.checkModalOpening().should('be.visible');
 
       // Ensure the modal is opened to get #attrCardstring

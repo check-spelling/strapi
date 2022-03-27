@@ -83,7 +83,7 @@ module.exports = async ({ provider, access_token, query, providers }) => {
               email: userbody.email,
             };
           }
-          // Get the email with Github's user/emails API
+          // Get the email with GitHub's user/emails API
           return github
             .get('user/emails')
             .auth(access_token)

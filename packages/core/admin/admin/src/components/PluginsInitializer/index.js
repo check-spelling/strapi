@@ -12,11 +12,11 @@ const PluginsInitializer = () => {
     dispatch({ type: 'SET_PLUGIN_READY', pluginId });
   });
 
-  const hasApluginNotReady = Object.keys(plugins).some(
+  const hasAPluginNotReady = Object.keys(plugins).some(
     (plugin) => plugins[plugin].isReady === false
   );
 
-  if (hasApluginNotReady) {
+  if (hasAPluginNotReady) {
     const initializers = Object.keys(plugins).reduce((acc, current) => {
       const InitializerComponent = plugins[current].initializer;
 

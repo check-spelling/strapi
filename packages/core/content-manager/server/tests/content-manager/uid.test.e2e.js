@@ -85,7 +85,7 @@ describe('Content Manager single types', () => {
         url: `/content-manager/uid/generate`,
         method: 'POST',
         body: {
-          contentTypeUID: 'non-existent',
+          contentTypeUID: 'nonexistent',
           field: 'slug',
           data: {},
         },
@@ -340,7 +340,7 @@ describe('Content Manager single types', () => {
         url: `/content-manager/uid/check-availability`,
         method: 'POST',
         body: {
-          contentTypeUID: 'non-existent',
+          contentTypeUID: 'nonexistent',
           field: 'slug',
           value: 'some-slug',
         },

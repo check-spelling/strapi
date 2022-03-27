@@ -56,7 +56,7 @@ const generateSchemaDefinition = (schema) => {
 
   // Properties whose values can be mapped to a literal type expression
   const literalPropertiesDefinitions = ['info', 'options', 'pluginOptions']
-    // Ignore non-existent or empty declarations
+    // Ignore nonexistent or empty declarations
     .filter((key) => !isEmpty(schema[key]))
     // Generate literal definition for each property
     .map(generatePropertyLiteralDefinitionFactory(schema));

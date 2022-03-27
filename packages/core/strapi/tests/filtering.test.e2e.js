@@ -210,7 +210,7 @@ describe('Filtering API', () => {
           qs: {
             filters: {
               name: {
-                $ne: 'Non existent product ',
+                $ne: 'Nonexistent product ',
               },
             },
           },
@@ -1067,7 +1067,7 @@ describe('Filtering API', () => {
         qs: {
           filters: {
             name: {
-              $notContainsi: ['Product', 'Non existent'],
+              $notContainsi: ['Product', 'Nonexistent'],
             },
           },
         },
@@ -1083,7 +1083,7 @@ describe('Filtering API', () => {
         qs: {
           filters: {
             name: {
-              $contains: ['Product', 'Non existent'],
+              $contains: ['Product', 'Nonexistent'],
             },
           },
         },
@@ -1099,7 +1099,7 @@ describe('Filtering API', () => {
         qs: {
           filters: {
             name: {
-              $notContains: ['product', 'Non existent'],
+              $notContains: ['product', 'Nonexistent'],
             },
           },
         },

@@ -156,7 +156,7 @@ const createManyToMany = (attributeName, attribute, meta, metadata) => {
  * else
  *  create join columnsa
  *
- * if bidirectionnal
+ * if bidirectional
  *  set info in the traget
  *
  *

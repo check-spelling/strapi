@@ -12,7 +12,7 @@
   "control-card.save": "保存",
   "filter.add": "添加筛选条件",
   "form.button.replace-media": "替换媒体",
-  "form.input.decription.file-alt": "该文本将会在素材不显示时显示",
+  "form.input.description.file-alt": "该文本将会在素材不显示时显示",
   "form.input.label.file-alt": "备用文本",
   "form.input.label.file-caption": "标题",
   "form.input.label.file-name": "文件名",

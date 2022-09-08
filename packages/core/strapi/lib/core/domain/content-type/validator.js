@@ -31,7 +31,7 @@ const LIFECYCLES = [
  *
  * Therefore we need to make sure our users only use values, which
  * can be returned by GraphQL, by checking the regressed values
- * agains the GraphQL regex.
+ * against the GraphQL regex.
  *
  * TODO V5: check if we can avoid this coupling by moving this logic
  * into the GraphQL plugin.

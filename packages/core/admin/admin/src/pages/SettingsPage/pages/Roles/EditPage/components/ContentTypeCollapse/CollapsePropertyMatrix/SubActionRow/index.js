@@ -17,7 +17,7 @@ import { cellWidth, rowHeight } from '../../../Permissions/utils/constants';
 import RequiredSign from '../../../RequiredSign';
 import { getCheckboxState } from '../../../utils';
 import { activeStyle } from '../../utils';
-import CarretIcon from '../CarretIcon';
+import CaretIcon from '../CaretIcon';
 
 const Cell = styled(Flex)`
   width: ${cellWidth};
@@ -44,7 +44,7 @@ const RowStyle = styled(Flex)`
   ${({ isCollapsable, theme }) =>
     isCollapsable &&
     `
-      ${CarretIcon} {
+      ${CaretIcon} {
         display: block;
         color: ${theme.colors.neutral100};
       }
@@ -125,7 +125,7 @@ const SubActionRow = ({
                   >
                     <Typography ellipsis>{upperFirst(label)}</Typography>
                     {required && <RequiredSign />}
-                    <CarretIcon $isActive={isActive} />
+                    <CaretIcon $isActive={isActive} />
                   </CollapseLabel>
                 </RowStyle>
                 <Flex style={{ flex: 1 }}>

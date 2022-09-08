@@ -13,7 +13,7 @@ import RequiredSign from '../../../RequiredSign';
 import RowLabelWithCheckbox from '../../../RowLabelWithCheckbox';
 import { getCheckboxState } from '../../../utils';
 import { activeStyle } from '../../utils';
-import CarretIcon from '../CarretIcon';
+import CaretIcon from '../CaretIcon';
 import SubActionRow from '../SubActionRow';
 import getRowLabelCheckboxState from './utils/getRowLabelCheckboxState';
 
@@ -29,7 +29,7 @@ const Wrapper = styled(Flex)`
   ${({ isCollapsable, theme }) =>
     isCollapsable &&
     `
-      ${CarretIcon} {
+      ${CaretIcon} {
         display: block;
         color: ${theme.colors.neutral100};
       }
@@ -112,7 +112,7 @@ const ActionRow = ({
             isActive={isActive}
           >
             {required && <RequiredSign />}
-            <CarretIcon $isActive={isActive} />
+            <CaretIcon $isActive={isActive} />
           </RowLabelWithCheckbox>
           <Flex>
             {propertyActions.map(({ label, isActionRelatedToCurrentProperty, actionId }) => {

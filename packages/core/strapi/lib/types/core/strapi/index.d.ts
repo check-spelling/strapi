@@ -209,14 +209,14 @@ export interface Strapi {
   startWebhooks(): Promise<void>;
 
   /**
-   * Method called when the server is fully initialized and listen to incomming requests.
+   * Method called when the server is fully initialized and listen to incoming requests.
    * It handles tasks such as logging the startup message
    * or automatically opening the administration panel.
    */
   postListen(): Promise<void>;
 
   /**
-   * Start listening for incomming requests
+   * Start listening for incoming requests
    */
   listen(): Promise<void | Error>;
 

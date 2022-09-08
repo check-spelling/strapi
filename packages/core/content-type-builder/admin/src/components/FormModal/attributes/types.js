@@ -129,7 +129,7 @@ const types = {
   },
   enumeration(usedAttributeNames, reservedNames) {
     /**
-     * For enumerations the least common denomiator is GraphQL, where
+     * For enumerations the least common denominator is GraphQL, where
      * values needs to match the secure name regex:
      * GraphQL Spec https://spec.graphql.org/June2018/#sec-Names
      *

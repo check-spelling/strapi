@@ -128,11 +128,11 @@ describe('Bulk actions for folders & files', () => {
         },
       });
 
-      const existingfilesIds = resFiles.body.results.map((f) => f.id);
-      expect(existingfilesIds).toEqual(
+      const existingFilesIds = resFiles.body.results.map((f) => f.id);
+      expect(existingFilesIds).toEqual(
         expect.not.arrayContaining([file1.id, file1a.id, file1a1.id])
       );
-      expect(existingfilesIds).toEqual(expect.arrayContaining([file1b.id]));
+      expect(existingFilesIds).toEqual(expect.arrayContaining([file1b.id]));
 
       data.folders.push(folder1, folder1b);
       data.files.push(file1b);
@@ -183,8 +183,8 @@ describe('Bulk actions for folders & files', () => {
         },
       });
 
-      const existingfilesIds = resFiles.body.results.map((f) => f.id);
-      expect(existingfilesIds).toEqual(expect.not.arrayContaining([file.id]));
+      const existingFilesIds = resFiles.body.results.map((f) => f.id);
+      expect(existingFilesIds).toEqual(expect.not.arrayContaining([file.id]));
     });
 
     test('Can delete only folders', async () => {

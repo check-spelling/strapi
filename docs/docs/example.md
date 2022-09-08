@@ -8,7 +8,7 @@ tags:
 
 ## Summary
 
-_Description of the sofware system / component._
+_Description of the software system / component._
 
 ## Detailed design
 

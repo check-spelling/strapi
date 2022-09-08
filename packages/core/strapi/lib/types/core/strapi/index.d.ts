@@ -221,7 +221,7 @@ export interface Strapi {
   listen(): Promise<void | Error>;
 
   /**
-   * Opent he administration panel in a browser if the option is enabled.
+   * Open the administration panel in a browser if the option is enabled.
    * You can disable it using the admin.autoOpen configuration variable.
    * 
    * Note: It only works in development envs.

@@ -34,4 +34,4 @@ _What other approaches did we consider?_
 
 - _Link to product documents._
 - _Link to user documentation._
-- _Any usefull research used for it_
+- _Any useful research used for it_

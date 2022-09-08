@@ -165,7 +165,7 @@ function Inputs({
   const { label, description, placeholder, visible } = metadatas;
 
   /**
-   * It decides whether using the default `step` accoding to its `inputType` or the one
+   * It decides whether using the default `step` according to its `inputType` or the one
    * obtained from `metadatas`.
    *
    * The `metadatas.step` is returned when the `inputValue` is divisible by it or when the

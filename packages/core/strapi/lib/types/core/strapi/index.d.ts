@@ -140,7 +140,7 @@ export interface Strapi {
   register(): Promise<Strapi>;
 
   /**
-   * Bootstraping phase.
+   * Bootstrapping phase.
    *
    * - Load all the content types
    * - Initialize the database layer

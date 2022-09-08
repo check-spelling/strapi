@@ -116,9 +116,9 @@ describe('Bulk actions for folders & files', () => {
         url: '/upload/folders',
       });
 
-      const existingfoldersIds = resFolder.body.data.map((f) => f.id);
-      expect(existingfoldersIds).toEqual(expect.not.arrayContaining([folder1a.id, folder1a1.id]));
-      expect(existingfoldersIds).toEqual(expect.arrayContaining([folder1.id, folder1b.id]));
+      const existingFoldersIds = resFolder.body.data.map((f) => f.id);
+      expect(existingFoldersIds).toEqual(expect.not.arrayContaining([folder1a.id, folder1a1.id]));
+      expect(existingFoldersIds).toEqual(expect.arrayContaining([folder1.id, folder1b.id]));
 
       const resFiles = await rq({
         method: 'GET',
@@ -217,8 +217,8 @@ describe('Bulk actions for folders & files', () => {
         url: '/upload/folders',
       });
 
-      const existingfoldersIds = resFolder.body.data.map((f) => f.id);
-      expect(existingfoldersIds).toEqual(expect.not.arrayContaining([folder.id]));
+      const existingFoldersIds = resFolder.body.data.map((f) => f.id);
+      expect(existingFoldersIds).toEqual(expect.not.arrayContaining([folder.id]));
     });
   });
 

@@ -107,7 +107,7 @@ describe('Simple Test GraphQL Users API End to End', () => {
       });
 
       // Use the JWT returned by the login request to
-      // authentify the next queries or mutations
+      // authenticate the next queries or mutations
       rq.setLoggedUser(user).setToken(res.body.data.login.jwt);
 
       data.user = res.body.data.login.user;
@@ -410,7 +410,7 @@ describe('Advanced Test GraphQL Users API End to End', () => {
       });
 
       // Use the JWT returned by the login request to
-      // authentify the next queries or mutations
+      // authenticate the next queries or mutations
       rq.setLoggedUser(user).setToken(res.body.data.login.jwt);
 
       data.user = res.body.data.login.user;

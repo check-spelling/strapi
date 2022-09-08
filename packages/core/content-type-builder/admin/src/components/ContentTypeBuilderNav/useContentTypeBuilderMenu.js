@@ -165,7 +165,7 @@ const useContentTypeBuilderMenu = () => {
     matchSorter(links, toLower(search), { keys: [(item) => toLower(item.title)] });
 
   const getMenu = () => {
-    // Maybe we can do it simpler with matchsorter wildcards ?
+    // Maybe we can do it simpler with match-sorter wildcards ?
     return data.map((section) => {
       const hasChild = section.links.some((l) => !isEmpty(l.links));
 

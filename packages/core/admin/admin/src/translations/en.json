@@ -44,7 +44,7 @@
   "Auth.form.rememberMe.label": "Remember me",
   "Auth.form.username.label": "Username",
   "Auth.form.username.placeholder": "e.g. Kai_Doe",
-  "Auth.form.welcome.subtitle": "Log in to your Strapi account",
+  "Auth.form.welcome.subtitle": "Log into your Strapi account",
   "Auth.form.welcome.title": "Welcome to Strapi!",
   "Auth.link.forgot-password": "Forgot your password?",
   "Auth.link.ready": "Ready to sign in?",

@@ -1,4 +1,3 @@
-abcd
 AComponent
 AContent
 activeline

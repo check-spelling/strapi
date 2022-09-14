@@ -95,7 +95,7 @@ describe('Non repeatable and Not required component', () => {
       }
     );
 
-    test('Throws when sending a non empty array with less then the min', async () => {
+    test('Throws when sending a non empty array with less than the min', async () => {
       const res = await rq.post('/', {
         body: {
           data: {

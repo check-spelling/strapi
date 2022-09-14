@@ -74,7 +74,7 @@ class Strapi {
     // Load the app configuration from the dist directory
     const appConfig = loadConfiguration({ appDir: rootDirs.app, distDir: rootDirs.dist }, opts);
 
-    // Instanciate the Strapi container
+    // Instantiate the Strapi container
     this.container = createContainer(this);
 
     // Register every Strapi registry in the container
@@ -98,10 +98,10 @@ class Strapi {
     this.isLoaded = false;
     this.reload = this.reload();
 
-    // Instanciate the Koa app & the HTTP server
+    // Instantiate the Koa app & the HTTP server
     this.server = createServer(this);
 
-    // Strapi utils instanciation
+    // Strapi utils instantiation
     this.fs = createStrapiFs(this);
     this.eventHub = createEventHub();
     this.startupLogger = createStartupLogger(this);
@@ -488,7 +488,7 @@ class Strapi {
       configurable: true,
       enumerable: true,
       set(value) {
-        // Special state when the reloader is disabled temporarly (see GraphQL plugin example).
+        // Special state when the reloader is disabled temporarily (see GraphQL plugin example).
         if (state.isWatching === false && value === true) {
           state.shouldReload += 1;
         }

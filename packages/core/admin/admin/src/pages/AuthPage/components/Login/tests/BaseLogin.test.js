@@ -703,7 +703,7 @@ describe('ADMIN | PAGES | AUTH | BaseLogin', () => {
                 <span
                   class="c9"
                 >
-                  Log in to your Strapi account
+                  Log into your Strapi account
                 </span>
               </div>
             </div>

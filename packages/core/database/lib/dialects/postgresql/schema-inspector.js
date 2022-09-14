@@ -67,7 +67,7 @@ const SQL_QUERIES = {
   WHERE rco.constraint_name=ANY(?)
   AND rco.constraint_schema = ?
 `,
-  FOREIGN_KEY_REFERENCES_CONSTRAIN_RFERENCE: /* sql */ `
+  FOREIGN_KEY_REFERENCES_CONSTRAIN_REFERENCE: /* sql */ `
   SELECT
   rel_kcu."table_name" as foreign_table,
   rel_kcu."column_name" as fk_column_name
@@ -260,11 +260,11 @@ class PostgresqlSchemaInspector {
         );
 
         for (const fkReferenceC of fkReferencesConstraint) {
-          const { rows: fkReferencesConstraintReferece } = await this.db.connection.raw(
-            SQL_QUERIES.FOREIGN_KEY_REFERENCES_CONSTRAIN_RFERENCE,
+          const { rows: fkReferencesConstraintReference } = await this.db.connection.raw(
+            SQL_QUERIES.FOREIGN_KEY_REFERENCES_CONSTRAIN_REFERENCE,
             [fkReferenceC.unique_constraint_name, dbSchema]
           );
-          for (const fkReferenceConst of fkReferencesConstraintReferece) {
+          for (const fkReferenceConst of fkReferencesConstraintReference) {
             ret[fkReference.constraint_name].referencedTable = fkReferenceConst.foreign_table;
             ret[fkReference.constraint_name].referencedColumns.push(
               fkReferenceConst.fk_column_name

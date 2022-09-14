@@ -44,7 +44,7 @@ module.exports = (context) => {
             return isWritableAttribute(contentType, attributeName) && isFieldEnabled(attributeName);
           });
 
-          // Add the ID for the component to enable inplace updates
+          // Add the ID for the component to enable in-place updates
           if (modelType === 'component' && isFieldEnabled('id')) {
             t.id('id');
           }

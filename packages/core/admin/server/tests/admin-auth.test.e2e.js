@@ -87,7 +87,7 @@ describe('Admin Auth End to End', () => {
         url: '/admin/login',
         method: 'POST',
         body: {
-          email: 'non-existent-user@strapi.io',
+          email: 'nonexistent-user@strapi.io',
           password: 'pcw123',
         },
       });
@@ -109,7 +109,7 @@ describe('Admin Auth End to End', () => {
         url: '/admin/login',
         method: 'POST',
         body: {
-          email: 'non-existent-user@strapi.io',
+          email: 'nonexistent-user@strapi.io',
         },
       });
 

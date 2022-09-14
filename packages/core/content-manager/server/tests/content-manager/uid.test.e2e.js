@@ -85,7 +85,7 @@ describe('Content Manager single types', () => {
         url: `/content-manager/uid/generate`,
         method: 'POST',
         body: {
-          contentTypeUID: 'non-existent',
+          contentTypeUID: 'nonexistent',
           field: 'slug',
           data: {},
         },
@@ -249,7 +249,7 @@ describe('Content Manager single types', () => {
         },
       });
 
-      const thridRes = await rq({
+      const thirdRes = await rq({
         url: `/content-manager/uid/generate`,
         method: 'POST',
         body: {
@@ -261,8 +261,8 @@ describe('Content Manager single types', () => {
         },
       });
 
-      expect(thridRes.statusCode).toBe(200);
-      expect(thridRes.body.data).toBe('my-title-1-1');
+      expect(thirdRes.statusCode).toBe(200);
+      expect(thirdRes.body.data).toBe('my-title-1-1');
     });
   });
 
@@ -340,7 +340,7 @@ describe('Content Manager single types', () => {
         url: `/content-manager/uid/check-availability`,
         method: 'POST',
         body: {
-          contentTypeUID: 'non-existent',
+          contentTypeUID: 'nonexistent',
           field: 'slug',
           value: 'some-slug',
         },

@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
-import { AutoReloadOverlayBockerContext } from '@strapi/helper-plugin';
+import { AutoReloadOverlayBlockerContext } from '@strapi/helper-plugin';
 import Blocker from './Blocker';
 
 const ELAPSED = 30;
@@ -80,7 +80,7 @@ const AutoReloadOverlayBlockerProvider = ({ children }) => {
   }, [lockApp, unlockApp]);
 
   return (
-    <AutoReloadOverlayBockerContext.Provider value={autoReloadValue}>
+    <AutoReloadOverlayBlockerContext.Provider value={autoReloadValue}>
       <Blocker
         displayedIcon={displayedIcon}
         isOpen={isOpen}
@@ -88,7 +88,7 @@ const AutoReloadOverlayBlockerProvider = ({ children }) => {
         title={title}
       />
       {children}
-    </AutoReloadOverlayBockerContext.Provider>
+    </AutoReloadOverlayBlockerContext.Provider>
   );
 };
 

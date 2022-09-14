@@ -71,7 +71,7 @@ const ListPage = () => {
     onError() {
       toggleNotification({
         type: 'warning',
-        message: { id: 'notification.error', defaultMessage: 'An error occured' },
+        message: { id: 'notification.error', defaultMessage: 'An error occurred' },
       });
     },
   });
@@ -90,7 +90,7 @@ const ListPage = () => {
       } else {
         toggleNotification({
           type: 'warning',
-          message: { id: 'notification.error', defaultMessage: 'An error occured' },
+          message: { id: 'notification.error', defaultMessage: 'An error occurred' },
         });
       }
     },

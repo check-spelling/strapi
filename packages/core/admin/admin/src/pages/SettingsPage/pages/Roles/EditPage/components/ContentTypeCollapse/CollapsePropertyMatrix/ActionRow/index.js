@@ -13,9 +13,9 @@ import RequiredSign from '../../../RequiredSign';
 import RowLabelWithCheckbox from '../../../RowLabelWithCheckbox';
 import { getCheckboxState } from '../../../utils';
 import { activeStyle } from '../../utils';
-import CarretIcon from '../CarretIcon';
+import CaretIcon from '../CaretIcon';
 import SubActionRow from '../SubActionRow';
-import getRowLabelCheckboxeState from './utils/getRowLabelCheckboxeState';
+import getRowLabelCheckboxState from './utils/getRowLabelCheckboxState';
 
 const Cell = styled(Flex)`
   width: ${cellWidth};
@@ -29,7 +29,7 @@ const Wrapper = styled(Flex)`
   ${({ isCollapsable, theme }) =>
     isCollapsable &&
     `
-      ${CarretIcon} {
+      ${CaretIcon} {
         display: block;
         color: ${theme.colors.neutral100};
       }
@@ -89,7 +89,7 @@ const ActionRow = ({
   };
 
   const { hasAllActionsSelected, hasSomeActionsSelected } = useMemo(() => {
-    return getRowLabelCheckboxeState(propertyActions, modifiedData, pathToData, propertyName, name);
+    return getRowLabelCheckboxState(propertyActions, modifiedData, pathToData, propertyName, name);
   }, [propertyActions, modifiedData, pathToData, propertyName, name]);
 
   return (
@@ -112,7 +112,7 @@ const ActionRow = ({
             isActive={isActive}
           >
             {required && <RequiredSign />}
-            <CarretIcon $isActive={isActive} />
+            <CaretIcon $isActive={isActive} />
           </RowLabelWithCheckbox>
           <Flex>
             {propertyActions.map(({ label, isActionRelatedToCurrentProperty, actionId }) => {

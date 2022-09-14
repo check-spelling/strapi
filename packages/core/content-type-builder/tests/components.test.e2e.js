@@ -123,7 +123,7 @@ describe('Content Type Builder - Components', () => {
   });
 
   describe('Get /components', () => {
-    test('Returns valid enveloppe', async () => {
+    test('Returns valid envelope', async () => {
       const res = await rq({
         method: 'GET',
         url: '/content-type-builder/components',
@@ -204,7 +204,7 @@ describe('Content Type Builder - Components', () => {
   });
 
   describe('PUT /components/:uid', () => {
-    test('Throws 404 on updating non existent component', async () => {
+    test('Throws 404 on updating nonexistent component', async () => {
       const res = await rq({
         method: 'PUT',
         url: '/content-type-builder/components/nonexistent-components',
@@ -305,7 +305,7 @@ describe('Content Type Builder - Components', () => {
   });
 
   describe('DELETE /components/:uid', () => {
-    test('Throws 404 on non existent component', async () => {
+    test('Throws 404 on nonexistent component', async () => {
       const res = await rq({
         method: 'DELETE',
         url: '/content-type-builder/components/nonexistent-components',

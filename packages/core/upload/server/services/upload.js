@@ -182,7 +182,7 @@ module.exports = ({ strapi }) => ({
   },
 
   /**
-   * When uploading an image, an additional thubmnail is generated.
+   * When uploading an image, an additional thumbnail is generated.
    * Also, if there are responsive formats defined, another set of images will be generated too.
    *
    * @param {*} fileData

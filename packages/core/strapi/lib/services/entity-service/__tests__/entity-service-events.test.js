@@ -99,7 +99,7 @@ describe('Entity service triggers webhooks', () => {
 
   test('Do not emit event when no deleted entity', async () => {
     entity = null;
-    // Delete non existent entity
+    // Delete nonexistent entity
     await instance.delete('test-model', 'entity-id', {});
 
     // Expect entry.create event to be emitted

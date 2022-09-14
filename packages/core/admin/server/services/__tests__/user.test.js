@@ -355,7 +355,7 @@ describe('User', () => {
       expect(result).toBeTruthy();
     });
 
-    test('Return false if the user does not exists', async () => {
+    test('Return false if the user does not exist', async () => {
       const count = jest.fn(() => Promise.resolve(0));
 
       global.strapi = {
@@ -517,7 +517,7 @@ describe('User', () => {
       expect(userService.register(input)).rejects.toThrowError('Invalid registration info');
     });
 
-    test('Calls udpate service', async () => {
+    test('Calls update service', async () => {
       const findOne = jest.fn(() => Promise.resolve({ id: 1 }));
       const updateById = jest.fn((user) => Promise.resolve(user));
 

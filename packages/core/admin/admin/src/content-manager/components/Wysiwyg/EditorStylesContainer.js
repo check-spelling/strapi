@@ -333,7 +333,7 @@ export const EditorStylesContainer = styled.div`
     content: '';
   }
 
-  /* Help users use markselection to safely style text background */
+  /* Help users use mark selection to safely style text background */
   span.CodeMirror-selectedtext {
     background: none;
   }
